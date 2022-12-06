@@ -47,6 +47,10 @@ section {
   padding: 10px;
 }
 
+ul {
+  list-style:disc;
+  list-style-position: inside;
+}
 
 
 colorScheme {
