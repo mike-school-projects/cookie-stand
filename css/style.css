@@ -1,0 +1,58 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  background-color: #CBD5F0;
+  color: #194F92;
+  margin-bottom: 20px;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+footer {
+  font-family: 'Roboto', sans-serif;
+  background-color: #CBD5F0;
+  color: #194F92;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 5vw;
+  font-family: 'Roboto', sans-serif;
+  color: #194F92;
+}
+
+h2{
+  font-size: 3vw;
+}
+
+.sales-data {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #EFB7BA;
+  color: #0b23db;
+}
+
+section {
+  font-size: 1vw;
+  background-color: black;
+  width:17%;
+  display:inline-block;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+colorScheme {
+  color: #FAFAFB;
+  color: #EFB7BA;
+  color: #E5C0C8;
+  color: #CBD5F0;
+  color: #194F92;
+}
