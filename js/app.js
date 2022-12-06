@@ -129,9 +129,9 @@ function htmlDisplay (location, DOM){
     ulElement.appendChild(liElem);
   }
 
-  let pElement = document.createElement('p');
-  pElement.textContent = `Total: ${location.salesTotal}`;
-  articleElem.appendChild(pElement);
+  let liElem = document.createElement('li');
+  liElem.textContent = `Total: ${location.salesTotal}`;
+  articleElem.appendChild(liElem);
 }
 
 // Executable Code *******************************************************
