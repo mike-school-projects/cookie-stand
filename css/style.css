@@ -52,6 +52,27 @@ ul {
   list-style-position: inside;
 }
 
+table, th, td {
+  border: 2px solid;
+  color: black;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: center;
+  width: auto;
+  border: 1px solid;
+}
+
+tr {
+  height: 40px;
+}
+
+th {
+    color:red;
+    font-weight:1000;
+}
 
 colorScheme {
   color: #FAFAFB;
