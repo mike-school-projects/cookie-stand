@@ -2,7 +2,7 @@ body {
   background-color: white;
   color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width:1920px;
+  width:1500px;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
   background-color: #CBD5F0;
   color: #194F92;
   margin-bottom: 20px;
-  width:1920px;
+  width:1500px;
   display:flex;
 }
 
@@ -18,7 +18,7 @@ nav {
   display: flex;
   flex-direction:column;
   justify-content: center;
-  width:1920px;
+  width:1500px;
 }
 
 nav ul {
@@ -39,7 +39,7 @@ nav li {
 
 main {
   margin-bottom: 30px;
-  width:1920px;
+  width:1500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,7 @@ main {
 
 #about-us {
   display:flex;
-  width:1800px;
+  width:1400px;
   margin-left:30px;
   margin-right:30px;
   margin-top: 30px;
@@ -59,15 +59,14 @@ main #about-us p {
 }
 
 #images {
-  width:1800px;
+  width:1400px;
   width:auto;
 }
 
 #images ul {
   display: flex;
-  width: 1900px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  justify-content: space-evenly;
+  width: 1400px;
   padding: 0px;
   margin:0px;
 }
@@ -77,7 +76,7 @@ main #about-us p {
 }
 
 #reviews {
-  width: 1800px;
+  width: 1400px;
   display:flex;
   flex-direction: column;
   margin-top: 30px;
