@@ -2,6 +2,7 @@ body {
   background-color: white;
   color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  width:1920px;
 }
 
 header {
@@ -9,27 +10,111 @@ header {
   background-color: #CBD5F0;
   color: #194F92;
   margin-bottom: 20px;
+  width:1920px;
+  display:flex;
 }
 
-main {
-  margin-bottom: 20px;
+nav {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  width:1920px;
 }
+
+nav ul {
+  display:flex;
+  justify-content:space-evenly;
+  vertical-align: bottom;
+}
+
+nav li {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  height:max-content;
+}
+
+
+
+
+main {
+  margin-bottom: 30px;
+  width:1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-us {
+  display:flex;
+  width:1800px;
+  margin-left:30px;
+  margin-right:30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+main #about-us p {
+  padding: 30px;
+}
+
+#images {
+  width:1800px;
+  width:auto;
+}
+
+#images ul {
+  display: flex;
+  width: 1900px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0px;
+  margin:0px;
+}
+
+#images li {
+  display:flex;
+}
+
+#reviews {
+  width: 1800px;
+  display:flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#reviews div {
+  height: 300px;
+  overflow:auto;
+}
+
+#reviews p {
+  margin-bottom: 30px;
+}
+
+
+
 
 footer {
   font-family: 'Roboto', sans-serif;
   background-color: #CBD5F0;
   color: #194F92;
   margin-bottom: 20px;
+  display:flex;
+  justify-content: space-evenly;
 }
 
+
 h1 {
-  font-size: 5vw;
+  font-size: 3vw;
   font-family: 'Roboto', sans-serif;
   color: #194F92;
+  margin-bottom: 20px;
 }
 
 h2{
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .sales-data {
@@ -40,16 +125,10 @@ h2{
 
 section {
   font-size: 1vw;
-  background-color: black;
   width:17%;
   display:inline-block;
   margin: 10px;
   padding: 10px;
-}
-
-ul {
-  list-style:disc;
-  list-style-position: inside;
 }
 
 table, th, td {
@@ -73,6 +152,7 @@ th {
     color:red;
     font-weight:1000;
 }
+
 
 colorScheme {
   color: #FAFAFB;
