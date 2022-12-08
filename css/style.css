@@ -131,15 +131,13 @@ section {
 }
 
 table, th, td {
-  border: 2px solid;
-  color: black;
-  width: 100%;
+  border: 2px solid black;
+  width: 1400px;
 }
 
 th, td {
   text-align: center;
   vertical-align: center;
-  width: auto;
   border: 1px solid;
 }
 

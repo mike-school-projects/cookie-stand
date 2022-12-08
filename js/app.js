@@ -102,7 +102,7 @@ function handleSubmit (event){
   tempArray[5] = 2000;
 
   // create new store object
-  let newStore = new Location(tempArray[0], tempArray[1], tempArray[2], tempArray[2], tempArray[3], tempArray[4]);
+  let newStore = new Location(tempArray[0], tempArray[1], tempArray[2], tempArray[3], tempArray[4], tempArray[5]);
 
   // add new store to locations array
   locations.push(newStore);
