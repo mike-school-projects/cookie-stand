@@ -5,7 +5,8 @@ let i = 0;
 
 
 // DOM Windows ***********************************************************
-let StoreTable = document.getElementById('store-table');
+let StoreTable = document.getElementById('store-table'); // table of stores
+let newStore = document.getElementById('new-store-form'); // new store form
 
 // Object Literals ********************************************************
 let Seattle = new Location('Seattle', 23, 65, 6.3, 600, 2000);
@@ -29,7 +30,7 @@ function Location(store, min, max, avg, open, close) {
 }
 
 Location.prototype.salesEstimate = function () {
-  // This loop sets up sales array.
+  // This loop sets up sales array within the location
   // [0] hourly total, i.e. 5am, 6am,
   // [i][0] time in 12 hr format
   // [i][1] am/pm
@@ -54,9 +55,8 @@ Location.prototype.salesEstimate = function () {
       ampm = 'am';
     }
 
-    // taken from MDN docs
+    // taken from MDN docs.  Calc random number of customers
     customers = Math.floor(Math.random() * (this.maxCustomers - this.minCustomers + 1) + this.minCustomers);
-
     cookies = Math.round(customers * this.avgOrder);
 
     this.salesTotal = this.salesTotal + cookies;
@@ -66,10 +66,11 @@ Location.prototype.salesEstimate = function () {
 };
 
 Location.prototype.render = function (tableElem) {
+  // create row
   let rowElem = document.createElement('tr');
   tableElem.appendChild(rowElem);
 
-  // Add store name for 1st column
+  // Add store name for 1st cell
   let cellElem = document.createElement('td');
   cellElem.textContent = this.name;
   rowElem.appendChild(cellElem);
@@ -81,11 +82,44 @@ Location.prototype.render = function (tableElem) {
     rowElem.appendChild(cellElem);
   }
 
-  // Add total data
+  // Add final cell with totals
   cellElem = document.createElement('td');
   cellElem.textContent = this.salesTotal;
   rowElem.appendChild(cellElem);
 };
+
+// New store function
+function handleSubmit (event){
+  event.preventDefault();
+  let tempArray=[];
+
+  // store data from form to temp array
+  tempArray[0] = event.target.storeName.value;
+  tempArray[1] = Number(event.target.storeMinCust.value);
+  tempArray[2] = Number(event.target.storeMaxCust.value);
+  tempArray[3] = Number(event.target.storeAvgCust.value);
+  tempArray[4] = 600;
+  tempArray[5] = 2000;
+
+  // create new store object
+  let newStore = new Location(tempArray[0], tempArray[1], tempArray[2], tempArray[2], tempArray[3], tempArray[4]);
+
+  // add new store to locations array
+  locations.push(newStore);
+
+  // clear table
+  removeAllChildNodes(StoreTable);
+
+  // build new table
+  renderTable(locations);
+}
+
+// got this from https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
 
 // DOM Manipulation *****************************************************
 function renderTable(stores){
@@ -157,6 +191,8 @@ function renderTable(stores){
 }
 
 // Executable Code *******************************************************
-
 // Create table
 renderTable(locations);
+
+// New store form
+newStore.addEventListener('submit', handleSubmit);

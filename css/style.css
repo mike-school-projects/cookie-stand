@@ -152,6 +152,12 @@ th {
     font-weight:1000;
 }
 
+fieldset {
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 30px;
+}
+
 
 colorScheme {
   color: #FAFAFB;

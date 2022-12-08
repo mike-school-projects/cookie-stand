@@ -29,12 +29,36 @@
   <main>
     <table id="store-table"></table>
 
+    <form id="new-store-form">
+      <fieldset>
+        <legend>New Store</legend>
+
+        <ul>
+          <li>
+            <label for="storeName">Name: </label>
+            <input name="storeName" type="text" id="storeName">
+          </li>
+          <li>
+            <label for="storeMinCust">Minimum Customers: </label>
+            <input name="storeMinCust" type="number" id="storeMinCust">
+          </li>
+          <li>
+            <label for="storeMaxCust">Maximum Customers: </label>
+            <input name="storeMaxCust" type="number" id="storeMaxCust">
+          </li>
+          <li>
+            <label for="storeAvgCust">Average Customers: </label>
+            <input name="storeAvgCust" type="number" step="any" id="storeAvgCust">
+          </li>
+        </ul>
+
+        <button id="storeSubmit">Submit</button>
+      </fieldset>
+    </form>
+
   </main>
   
-
-
   <script src="js/app.js"></script>
-
 
   <footer>
     <div>
