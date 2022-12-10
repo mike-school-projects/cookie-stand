@@ -1,14 +1,14 @@
 body {
-  background-color: white;
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #e8e5df;
   width:1500px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
 }
 
 header {
   font-family: 'Roboto', sans-serif;
-  background-color: #CBD5F0;
   color: #194F92;
+  background-color: #CBD5F0;
   margin-bottom: 20px;
   width:1500px;
   display:flex;
@@ -97,8 +97,8 @@ main #about-us p {
 
 footer {
   font-family: 'Roboto', sans-serif;
-  background-color: #CBD5F0;
   color: #194F92;
+  background-color: #CBD5F0;
   margin-bottom: 20px;
   display:flex;
   justify-content: space-evenly;
@@ -114,12 +114,12 @@ h1 {
 
 h2{
   font-size: 2vw;
+  font-family: 'Roboto', sans-serif;
+  color: #194F92;
 }
 
 .sales-data {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #EFB7BA;
-  color: #0b23db;
 }
 
 section {
@@ -139,6 +139,8 @@ th, td {
   text-align: center;
   vertical-align: center;
   border: 1px solid;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#194F92
 }
 
 tr {
@@ -154,13 +156,4 @@ fieldset {
   border: 1px solid black;
   padding: 20px;
   margin-top: 30px;
-}
-
-
-colorScheme {
-  color: #FAFAFB;
-  color: #EFB7BA;
-  color: #E5C0C8;
-  color: #CBD5F0;
-  color: #194F92;
 }
